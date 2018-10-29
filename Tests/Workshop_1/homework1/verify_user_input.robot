@@ -5,6 +5,7 @@ Library  Dialogs
     
 *** Variables ***
 ${expected_value}  abc
+
 *** Test Cases ***
 first test 
     verify user input
