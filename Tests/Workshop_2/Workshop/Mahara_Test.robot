@@ -16,5 +16,3 @@ Mahara Admin Login
     Login To Mahara    Admin    MaharaDemo
     Page Should Contain Link    https://demo.mahara.org/user/james-jetts    20    
     Page Should Contain Element    xpath=//a[@class="user-icon"]    20
-
-...
