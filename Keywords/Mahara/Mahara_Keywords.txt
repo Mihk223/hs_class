@@ -1,0 +1,17 @@
+*** Settings ***
+Library    SeleniumLibrary    
+
+*** Keywords ***
+Open Browser To Mahara
+    Open Browser    https://demo.mahara.org/    chrome   
+    Maximize Browser Window 
+    
+Login To Mahara
+    [Arguments]    ${uname}    ${pwd}
+    Input Text    id=login_login_username    ${uname}
+    Input Password    name=login_password    ${pwd}
+    Click Button    Login  
+    
+Capture Screenshot and Close Browser
+    Capture Page Screenshot    
+    Close Browser
