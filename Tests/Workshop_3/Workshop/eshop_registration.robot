@@ -20,6 +20,7 @@ Invalid Password
     :FOR    ${password}    IN    @{invalid_passwords}
     \    ${password}    &{valid_data}  
 
+
 *** Keywords ***
 Invalid Zip Code Should Fail
     [Arguments]    ${zip_code}    &{test_data}
@@ -28,6 +29,8 @@ Invalid Zip Code Should Fail
     Click Button    ${Button_register}
     Page Should Contain    The Zip/Postal code you've entered is invalid. It must follow this format: 00000
     
+Invalid Value Should Fail
+    #bude na gitu
 Invalid Password Should Fail
     [Arguments]    ${pwd}    &{test_data}
     Set to Dictionary    ${test_data}    password=${pwd}
